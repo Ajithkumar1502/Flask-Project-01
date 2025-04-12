@@ -1,17 +1,14 @@
-from flask import Flask # type: ignore # type: ignoe
+from flask import Flask # type: 
 
-# Create a Flask application instance
 app = Flask(__name__)
 
-# Define a route and view function
 @app.route('/')
 def home():
     return "Hello, World! This is my first web app."
 
-# Run the application
 if __name__ == '__main__':
     app.run(debug=True)
-from flask import Flask, render_template, request # type: ignore
+from flask import Flask, render_template, request 
 
 app = Flask(__name__)
 
