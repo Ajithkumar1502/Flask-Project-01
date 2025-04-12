@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Greet</title>
+</head>
+<body>
+    <h1>Greet Someone</h1>
+    <form method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
